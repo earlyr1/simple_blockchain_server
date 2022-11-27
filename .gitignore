@@ -1,2 +1,5 @@
 ./pytest_cache/*
 pyproject.toml
+.idea/*
+bc_server/__pycache__/*
+tests/__pycache__/*
