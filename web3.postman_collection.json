@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "4740947d-0a0c-4459-bc94-e5fef7853591",
+		"name": "web3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"network\": \"avalanche\",\n    \"wallet\": \"0x416a7989a964C9ED60257B064Efc3a30FE6bF2eE\",\n    \"block_num\": \"0x838388\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/info/balance",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"info",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Events",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"block_num\": 22911056\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/info/events",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"info",
+						"events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
