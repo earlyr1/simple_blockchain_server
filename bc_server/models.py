@@ -36,9 +36,6 @@ class BaseModelWithBlockNum(BaseModel):
                 model=cls,
             )
 
-    def __hash__(self):
-        return hash(self.block_num)
-
 
 class BalancePayload(BaseModelWithBlockNum):
     network: Network = Field(example=Network.AVALANCHE)
@@ -56,9 +53,6 @@ class BalancePayload(BaseModelWithBlockNum):
                 )
             case _:
                 return ret
-
-    def __hash__(self):
-        return hash(str(self.network) + ':' + str(self.wallet) + ':' + str(self.block_num))
 
 
 EventsPayload = BaseModelWithBlockNum
