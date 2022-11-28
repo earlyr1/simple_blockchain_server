@@ -9,7 +9,8 @@
 A couple of sample requests in `web3.postman_collection.json`.
 
 As curl:
-```curl --location --request POST '127.0.0.1:8080/info/balance' \
+``` 
+curl --location --request POST '127.0.0.1:8080/info/balance' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "network": "avalanche",
@@ -17,7 +18,8 @@ As curl:
     "block_num": "0x838388"
 }'
 ```
-```curl --location --request POST '127.0.0.1:8080/info/events' \
+``` 
+curl --location --request POST '127.0.0.1:8080/info/events' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "block_num": 22911056
