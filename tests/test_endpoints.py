@@ -46,6 +46,7 @@ class TestGetBalance:
         async with AsyncClient(app=app, base_url="http://test") as client:
             response = await client.post(self.endpoint, json=balance_payload)
         assert response.status_code == 500
+        assert response.json() == {"error": "Oh no"}
 
 
 class TestGetLogs:
