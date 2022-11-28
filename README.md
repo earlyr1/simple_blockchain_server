@@ -6,6 +6,7 @@
 # Prod:
 `make prod`
 
+# Sample requests:
 A couple of sample requests in `web3.postman_collection.json`.
 
 As curl:
