@@ -20,14 +20,14 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:8000/info/balance",
+					"raw": "127.0.0.1:8080/info/balance",
 					"host": [
 						"127",
 						"0",
 						"0",
 						"1"
 					],
-					"port": "8000",
+					"port": "8080",
 					"path": [
 						"info",
 						"balance"

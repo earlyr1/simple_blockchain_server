@@ -1,9 +1,9 @@
 ## simple_blockchain_server
 
 # Test:
-`docker build --target test --tag test:latest . && \
-    docker run test:latest `
+`make test`
 
 #Prod:
-`docker build --target production --tag prod:latest . && \
-docker run -p 8080:8080 prod:latest`
+`make prod`
+
+A couple of sample requests in `web3.postman_collection.json.
